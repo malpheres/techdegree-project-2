@@ -1,6 +1,7 @@
 /*====================================
         GLOBAL STYLES
 ====================================*/
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,13 +13,13 @@ body {
   padding: 0;
   text-align: center;
   font-family: 'Lato', sans-serif;
-  color: #222;
+  color: #4a4a4a;
   background-color: #fafafa;
 }
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #4a4a4a;
 }
 
 ul,
@@ -30,14 +31,25 @@ li {
   list-style-type: none;
 }
 
+h2 {
+  font-size: 1em;
+  font-weight: 900;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+.wrapper {
+  margin-right: .5em;
+  margin-left: .5em;
+}
+
 /*====================================
         NAVIGATION
 ====================================*/
 
 .main-nav {
   margin: 0 auto;
-  margin-right: .5em;
-  margin-left: .5em;
 }
 
 .main-nav li {
@@ -51,12 +63,12 @@ li {
   display: block;
   width: 100%;
   height: 100%;
-  font-weight: bold;
+  font-weight: 700;
   background-color: #fff;
 }
 
 /*====================================
-        PORTFOLIO SECTION
+        HEADER
 ====================================*/
 
 .header {
@@ -64,22 +76,77 @@ li {
   margin-bottom: 50px;
 }
 
+.profile-pic {
+  max-width: 75%;
+}
 
+.intro {
+  margin-top: 30px;
+  font-size: 1.05em;
+}
 
 /*====================================
         PORTFOLIO SECTION
 ====================================*/
 
+.portfolio h3 {
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
 .port-img {
   width: 90%;
 }
 
+.portfolio p {
+  margin-bottom: 30px;
+}
+
+/*====================================
+        CONTACT
+====================================*/
+
+.contact h2 {
+  margin-top: 125px;
+}
+
+.contact a {
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+.contact li {
+  margin-top: 25px;
+}
+
+/*====================================
+        FOOTER
+====================================*/
+
+.footer {
+  margin-top: 125px;
+  border-top: .5px solid #e7e7e7;
+}
+
+.footer .name {
+  float: left;
+}
+
+.footer li {
+  padding-top: 15px;
+  padding-bottom: 25px;
+  font-weight: 700;
+  float: right;
+}
 /*====================================
         CLEARFIX
 ====================================*/
 
-.clearfix :: after {
-  content: "";
-  display: table;
-  clear: both;
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
 }
