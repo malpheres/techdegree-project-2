@@ -11,27 +11,28 @@
 
 <body>
   <div class="wrapper">
-    <div class="main-nav">
-      <h1>Michael Montalvo</h1>
-      <ul>
-        <li>
-          <a href="index.html">HOME</a>
-        </li>
-        <li>
-          <a href="porfolio.html">PORTFOLIO</a>
-        </li>
-        <li>
-          <a href="contact.html">CONTACT</a>
-        </li>
-      </ul>
-    </div>
+    <h1 class="name">Michael Montalvo</h1>
+      <div class="main-nav clearfix">
+        <ul>
+          </li>
+          <li>
+            <a href="index.html">HOME</a>
+          </li>
+          <li>
+            <a href="#portfolio">PORTFOLIO</a>
+          </li>
+          <li>
+            <a href="#contact">CONTACT</a>
+          </li>
+        </ul>
+      </div>
 
-    <div class="header">
+    <div class="header clearfix">
       <img class="profile-pic" src="images/responsive-layout-profile.png" alt="Profile Picture" />
       <p class="intro">Hi! I'm a front-end developer who loves responsive design and css. I recently finished learning front-end web devlopment at Treehouse and am excited to put all my skills to use!</p>
     </div>
 
-    <div class="portfolio">
+    <div class="portfolio clearfix" id="portfolio">
       <h2>PORTFOLIO</h2>
         <ul>
           <li>
@@ -67,7 +68,7 @@
         </ul>
       </div>
 
-      <div class="contact">
+      <div class="contact" id="contact">
         <h2>CONTACT</h2>
           <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
           <ul>
@@ -77,10 +78,19 @@
       </div>
 
       <div class="footer clearfix">
-          <ul class="nav">
-            <li class="name">Michael Montalvo</li>
-            <li>
+        <h1 class="name">Michael Montalvo</h1>
+          <ul class="foot-nav">
+            <li class="top">
               <a href="index.html">BACK TO TOP</a>
+            </li>
+            <li>
+              <a href="index.html">HOME</a>
+            </li>
+            <li>
+              <a href="#portfolio">PORTFOLIO</a>
+            </li>
+            <li>
+              <a href="#contact">CONTACT</a>
             </li>
           </ul>
       </div>

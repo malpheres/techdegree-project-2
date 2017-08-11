@@ -48,6 +48,10 @@ h2 {
         NAVIGATION
 ====================================*/
 
+.name {
+  margin-bottom: 30px;
+}
+
 .main-nav {
   margin: 0 auto;
 }
@@ -55,7 +59,6 @@ h2 {
 .main-nav li {
   font-size: 1em;
   margin-bottom: 10px;
-  background-color: #fff;
 }
 
 .main-nav a {
@@ -133,11 +136,14 @@ h2 {
 }
 
 .footer li {
-  padding-top: 15px;
-  padding-bottom: 25px;
-  font-weight: 700;
   float: right;
+  font-weight: 700;
 }
+
+.foot-nav {
+  display: none;
+}
+
 /*====================================
         CLEARFIX
 ====================================*/
@@ -149,4 +155,142 @@ h2 {
     height: 0;
     line-height: 0;
     visibility: hidden;
+}
+
+/*====================================
+        MEDIA QUERIES
+====================================*/
+
+/*--------768PX--------*/
+
+@media (min-width: 768px) {
+
+  .wrapper {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+  }
+
+/*-Main Nav-*/
+
+  .main-nav li {
+    display: inline-block;
+    margin-left: 15px;
+  }
+
+  .name {
+    margin-bottom: 15px;
+  }
+
+/*-Header-*/
+
+  .profile-pic {
+    float: right;
+    width: 40%;
+  }
+
+  .intro {
+    font-size: 1.25em;
+    text-align: left;
+    padding-right: 300px;
+  }
+
+/*-Portfolio-*/
+
+  .portfolio  {
+    margin-bottom: 0;
+  }
+
+  .port-img {
+    width: 100%;
+  }
+
+  .portfolio li {
+    float: left;
+    display: inline-block;
+    max-width: 49%;
+    margin-bottom: 35px;
+  }
+
+  .portfolio p {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .portfolio li:nth-child(even) {
+    float: right;
+  }
+
+/*-Contact-*/
+  .contact h2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .contact p {
+    margin-right: 135px;
+    margin-left: 135px;
+  }
+
+/*-Footer-*/
+
+  .footer {
+    border: 1px solid red;
+    margin-bottom: 0;
+  }
+
+  .footer .name {
+    float: left;
+    font-size: 1.25em;
+  }
+
+  .top {
+    display: none;
+  }
+
+  .foot-nav {
+    float: right;
+    font-size: 1.25em;
+    display: inline-block;
+    margin-left: 40px;
+    font-weight: 700;
+    background-color: #fff;
+  }
+  .footer li {
+    border: 1px solid red;
+  }
+
+}
+
+
+/*--------1024px--------*/
+
+@media (min-width: 1024px) {
+
+  .wrapper {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+  }
+  .name {
+    float: left;
+    display: inline-block;
+  }
+
+  .main-nav {
+    border: 1px solid red;
+  }
+
+  .main-nav li {
+    margin-left: 15px;
+    float: right;
+  }
+
+  .header {
+    border: 1px solid red;
+  }
+  .profile-pic {
+    float: right;
+  }
+
+  .intro {
+    text-align: left;
+  }
 }
