@@ -14,6 +14,7 @@ body {
   text-align: center;
   font-family: 'Lato', sans-serif;
   color: #4a4a4a;
+  background-color: #fafafa;
 }
 
 a {
@@ -47,16 +48,12 @@ h2 {
         NAVIGATION
 ====================================*/
 
-.main-nav .name {
-  color: #fff;
+.name {
+  margin-bottom: 30px;
 }
 
 .main-nav {
-  position: relative;
-  background-color: #666;
-  position: relative;
-  margin: 0 -9999rem;
-  padding: .25rem 9999rem;
+  margin: 0 auto;
 }
 
 .main-nav li {
@@ -71,7 +68,6 @@ h2 {
   height: 100%;
   font-weight: 700;
   background-color: #fff;
-  border-radius: 10px;
 }
 
 /*====================================
@@ -131,23 +127,16 @@ h2 {
 ====================================*/
 
 .footer {
-  background-color: #666;
-  margin: 0 -9999rem;
-  padding: .25rem 9999rem;
+  margin-top: 125px;
+  border-top: .5px solid #e7e7e7;
 }
 
-.footer a {
-  color: #fff;
-}
-
-.name {
+.footer .name {
   font-size: 1em;
   float: left;
-  color: #fff;
 }
 
-
-.footer .top {
+.top {
   font-size: 1em;
   float: right;
   display: inline-block;
@@ -155,7 +144,6 @@ h2 {
 
 .footer li {
   font-weight: 700;
-  
 }
 
 .foot-nav {
