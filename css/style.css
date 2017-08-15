@@ -14,7 +14,6 @@ body {
   text-align: center;
   font-family: 'Lato', sans-serif;
   color: #4a4a4a;
-  background-color: #fafafa;
 }
 
 a {
@@ -40,20 +39,24 @@ h2 {
 
 
 .wrapper {
-  margin-right: .5em;
-  margin-left: .5em;
+  margin-right: 1em;
+  margin-left: 1em;
 }
 
 /*====================================
         NAVIGATION
 ====================================*/
 
-.name {
-  margin-bottom: 30px;
+.main-nav .name {
+  color: #fff;
 }
 
 .main-nav {
-  margin: 0 auto;
+  position: relative;
+  background-color: #666;
+  position: relative;
+  margin: 0 -9999rem;
+  padding: .25rem 9999rem;
 }
 
 .main-nav li {
@@ -68,6 +71,7 @@ h2 {
   height: 100%;
   font-weight: 700;
   background-color: #fff;
+  border-radius: 10px;
 }
 
 /*====================================
@@ -98,7 +102,7 @@ h2 {
 }
 
 .port-img {
-  width: 90%;
+  width: 100%;
 }
 
 .portfolio p {
@@ -127,17 +131,31 @@ h2 {
 ====================================*/
 
 .footer {
-  margin-top: 125px;
-  border-top: .5px solid #e7e7e7;
+  background-color: #666;
+  margin: 0 -9999rem;
+  padding: .25rem 9999rem;
 }
 
-.footer .name {
+.footer a {
+  color: #fff;
+}
+
+.name {
+  font-size: 1em;
   float: left;
+  color: #fff;
+}
+
+
+.footer .top {
+  font-size: 1em;
+  float: right;
+  display: inline-block;
 }
 
 .footer li {
-  float: right;
   font-weight: 700;
+  
 }
 
 .foot-nav {
@@ -166,8 +184,8 @@ h2 {
 @media (min-width: 768px) {
 
   .wrapper {
-    margin-left: 1.5em;
-    margin-right: 1.5em;
+    margin-left: 1em;
+    margin-right: 1em;
   }
 
 /*-Main Nav-*/
@@ -186,6 +204,7 @@ h2 {
   .profile-pic {
     float: right;
     width: 40%;
+    margin-left: 30px;
   }
 
   .intro {
@@ -207,7 +226,8 @@ h2 {
   .portfolio li {
     float: left;
     display: inline-block;
-    max-width: 49%;
+    width: 45%;
+    margin: 2.5%;
     margin-bottom: 35px;
   }
 
@@ -216,14 +236,14 @@ h2 {
     margin-right: 15px;
   }
 
-  .portfolio li:nth-child(even) {
-    float: right;
+  .portfolio li:nth-child(odd) {
+    clear: left;
   }
 
 /*-Contact-*/
+
   .contact h2 {
     margin-top: 50px;
-    margin-bottom: 50px;
   }
   .contact p {
     margin-right: 135px;
@@ -232,31 +252,39 @@ h2 {
 
 /*-Footer-*/
 
-  .footer {
-    border: 1px solid red;
-    margin-bottom: 0;
-  }
+.footer .name {
+  float: left;
+  font-size: 1.25em;
+}
 
-  .footer .name {
-    float: left;
-    font-size: 1.25em;
-  }
+.footer ul {
+  float: right;
+}
 
-  .top {
-    display: none;
-  }
+.footer .top {
+  display: none;
+}
 
-  .foot-nav {
-    float: right;
-    font-size: 1.25em;
-    display: inline-block;
-    margin-left: 40px;
-    font-weight: 700;
-    background-color: #fff;
-  }
-  .footer li {
-    border: 1px solid red;
-  }
+.foot-nav {
+  display: inline-block;
+}
+
+.foot-nav li {
+  float: left;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.foot-nav a {
+  padding: 1em;
+  width: 100%;
+  height: 100%;
+  font-weight: 700;
+}
+
+.footer li {
+  padding-left: 35px;
+}
 
 }
 
@@ -266,31 +294,94 @@ h2 {
 @media (min-width: 1024px) {
 
   .wrapper {
-    margin-left: 1.5em;
-    margin-right: 1.5em;
+    margin-left: 1em;
+    margin-right: 1em;
   }
+
+/*-Main Nav-*/
+
+  .main-nav ul {
+    float: right;
+    clear: right;
+  }
+  .main-nav li {
+    padding-top: 18.219px;
+    padding-bottom: 18.219px;
+    margin-left: 15px;
+  }
+
   .name {
     float: left;
-    display: inline-block;
+    clear: left;
+    padding-top: 18.219px;
+    padding-bottom: 18.219px;
   }
 
-  .main-nav {
-    border: 1px solid red;
-  }
+/*-Header-*/
 
-  .main-nav li {
-    margin-left: 15px;
-    float: right;
-  }
-
-  .header {
-    border: 1px solid red;
-  }
   .profile-pic {
     float: right;
+    clear: right;
+    display: block;    
+    width: 40%;
+    margin-left: 100px;
   }
 
   .intro {
+    font-size: 1.25em;
     text-align: left;
   }
+
+/*-Portfolio-*/
+
+  .portfolio  {
+    margin-bottom: 0;
+  }
+
+  .port-img {
+    width: 100%;
+  }
+
+  .portfolio li {
+    width: 28.3333%;
+  }
+
+  .portfolio li:nth-child(odd) {
+    clear: none;
+  }
+
+  .portfolio li:nth-child(3n + 1) {
+    clear: left;
+  }
+
+  .portfolio p {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+/*-Contact-*/
+
+  .contact h2 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  .contact p {
+    font-size: 1.25em;
+    margin-right: 210px;
+    margin-left: 210px;
+  }
+
+/*-Footer-*/
+
+.footer {
+  margin-bottom: 0;
+}
+
+.footer .name {
+  float: left;
+  clear: left;
+  font-size: 1.25em;
+  padding: 0;
+}
+
 }
